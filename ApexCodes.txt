@@ -1,0 +1,125 @@
+1)Sort Numbers-
+
+public class SortNumbers1 {
+	public static void sortNumbers() {
+        // Define a list of numbers
+        List<Integer> numbers = new List<Integer>{5, 2, 8, 1, 6};
+
+        // Sort the list of numbers
+        numbers.sort();
+
+        // Print the sorted list of numbers
+        for(Integer number1 : numbers) {
+            System.debug(number1);
+        }
+    }
+}
+
+Run this code on anonymous Window -
+
+SortNumbers1.sortNumbers();
+
+----------------------------------------------------------------------------------------
+2) Even Odd -
+
+public class EvenOdd1 {
+    public static void identify(Integer num) { 
+        if (Math.mod(num, 2) == 0) {
+            System.debug(num + ' is Even');
+        } else {
+            System.debug(num + ' is Odd');
+        }
+    }
+}
+
+
+Run this code on anonymous Window -
+
+EvenOdd1.identify(5);
+
+------------------------------------------------------------------------------------------
+3)positive Negative-
+
+public class PositiveNegative {
+    public static void identifyPositiveNegative(Integer num) {
+        if(num > 0) {
+            System.debug(num + ' is positive');
+        } else if(num < 0) {
+            System.debug(num + ' is negative');
+        } else {
+            System.debug('The number is zero');
+        }
+    }
+}
+
+
+Run this code on anonymous Window -
+
+PositiveNegative.identifyPositiveNegative(7);
+
+-------------------------------------------------------------------------------------------
+
+4)Fibonacci Series-
+
+public class FibonacciSeries1 {
+	public static void generate(Integer n) {
+        Integer a = 0;
+        Integer b = 1;
+        Integer c;
+
+        // Print the first two numbers in the series
+        System.debug(a);
+        System.debug(b);
+
+        // Generate the rest of the series
+        for(Integer i = 2; i < n; i++) {
+            c = a + b;
+            System.debug(c);
+            a = b;
+            b = c;
+        }
+    }
+}
+
+
+Run this code on anonymous Window -
+
+FibonacciSeries1.generate(6);
+
+-------------------------------------------------------------------------------------------
+
+5) Arithmetic-
+
+
+public class Arithmetic {
+    public static void main() {
+        Integer num1 = 10; 
+        Integer num2 = 5; 
+
+        // Addition
+        Integer sum = num1 + num2;
+        System.debug('Sum: ' + sum);
+
+        // Subtraction
+        Integer difference = num1 - num2;
+        System.debug('Difference: ' + difference);
+
+        // Multiplication
+        Integer product = num1 * num2;
+        System.debug('Product: ' + product);
+
+        // Division 
+        if (num2 != 0) {
+            Decimal quotient = (Decimal) num1 / num2;
+            System.debug('Quotient: ' + quotient);
+        } else {
+            System.debug('Cannot divide by zero.');
+        }
+    }
+}
+
+Run this code on anonymous Window -
+
+Arithmetic.main();
+
+
